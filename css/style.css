@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,400&display=swap');
+
+:root {
+    --naranja: #f05c21;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+h2.title {
+    color: var(--naranja);
+    font-weight: 900;
+}
+
+p,
+a {
+    font-weight: 300;
+}
+
+.btn-pedidos {
+    background: var(--naranja);
+    padding: .7rem;
+    color: #ffffff;
+    border-radius: 25px;
+    display: block;
+    margin: 1rem auto;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* Home */
+.home {
+    background: #000;
+    background-image: url(../images/Home/Bg.png);
+    background-size: cover;
+    background-position: center -25px;
+    background-repeat: no-repeat;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #ffffff;
+    position: relative;
+}
+
+.home .flecha {
+    position: absolute;
+    bottom: 100px;
+}
+
+.home h2 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.home h3 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+.about {
+    position: relative;
+}
+
+.about .container {
+    /* position: absolute; */
+}
+
+
+/* Price */
+.price {
+    background: #000;
+}
+
+.price .container {
+    border: 1px solid var(--naranja);
+    padding: 2rem;
+    border-radius: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.price .container span {
+    color: #00bdff;
+}
+
+.price .price-table>p {
+    color: var(--naranja);
+}
+
+/* Services */
+
+.services p.services {
+    color: var(--naranja);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.services .col-md-6 {
+    border: 1px solid #00bdff;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+}
+
+.services .col-md-6 h3 {
+    color: var(--naranja);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* Contact */
+.contact {
+    background: #252628;
+    color: #ffffff;
+}
+
+.contact form input,
+.contact form textarea {
+    background: transparent;
+    border: 1px solid var(--naranja);
+
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #48494b;
+}
+
+.contact form label {
+    color: #48494b;
+}
+
+.contact form button {
+    background: var(--naranja);
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+    margin-left: auto;
+    display: block;
+}
+
+.contact .data {
+    background: #3b3c3e;
+    width: 75%;
+    padding: 2rem;
+    border-radius: 25px;
+}
+
+.contact .data p {
+    color: var(--naranja);
+    margin: 25px 0 10px;
+}
+
+.contact .data a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+}
+
+
+/* Footer */
+footer {
+    background: #000;
+    color: #ffffff;
+}
+
+footer a {
+    color: var(--naranja);
+    display: inline-block;
+    margin: 0 1.5rem;
+    border-left: 1px solid #00bdff;
+    border-right: 1px solid #00bdff;
+    padding: 0 1.5rem;
+}
+
+footer .redes a {
+    margin: 0 .7rem;
+    border: none;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        -ms-flex: 0 0 46%;
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+}
