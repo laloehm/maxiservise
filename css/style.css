@@ -2,13 +2,13 @@
 
 :root {
     --naranja: #f05c21;
+    --azul-maxi: #00bdff
 }
-
-
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Titillium Web';
 }
 
 .row {
@@ -18,11 +18,23 @@
 h2.title {
     color: var(--naranja);
     font-weight: 900;
+    position: relative;
+    padding: 1rem 0;
+}
+
+h2.title img {
+    position: absolute;
+    left: -70px;
+    bottom: 0;
 }
 
 p,
 a {
     font-weight: 300;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .btn-pedidos {
@@ -36,15 +48,77 @@ a {
     text-align: center;
 }
 
+.btn-pedidos:hover {
+    background: #00bdff;
+    color: #fff;
+    font-weight: 600;
+}
+
+.redes-fixed {
+    position: fixed;
+    right: 15px;
+    z-index: 1025;
+}
+
+.redes-fixed a {
+    color: var(--naranja);
+    /* <border: 1px solid var(--naranja); */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1rem 0;
+    font-size: 25px;
+}
+
+/* .redes-fixed a:nth-child(1) {
+    background: #4ca92b;
+    color: white;
+    border: none;
+} */
+.redes-fixed a:hover {
+    background-size: cover;
+    background-position: center;
+}
+
+.redes-fixed a:hover img {
+    display: none;
+}
+
+.redes-fixed a:nth-child(1):hover {
+    background-image: url(../images/Whats_2.png);
+}
+
+.redes-fixed a:nth-child(2):hover {
+    background-image: url(../images/Meesenger.png);
+}
+
+.redes-fixed a:nth-child(3):hover {
+    background-image: url(../images/FAQs.png);
+}
+
+.ir-arriba {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2000;
+    font-size: 2rem;
+    color: var(--naranja);
+    cursor: pointer;
+}
+
 
 /* Home */
 .home {
     background: #000;
     background-image: url(../images/Home/Bg.png);
     background-size: cover;
-    background-position: center -25px;
+    background-position: center -55px;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -55,7 +129,8 @@ a {
 
 .home .flecha {
     position: absolute;
-    bottom: 100px;
+    bottom: -200px;
+    left: 0;
 }
 
 .home h2 {
@@ -72,7 +147,7 @@ a {
 
 .navbar {
     position: absolute;
-    top: 0;
+    top: 15px;
     left: 0;
     width: 100%;
 }
@@ -81,12 +156,40 @@ a {
     color: #ffffff !important;
 }
 
+.nav-link:hover {
+    color: #00bdff !important;
+    box-shadow: 0px 1px var(--naranja);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.price hr {
+    border-top: 1px solid var(--naranja);
+    margin: 2rem;
+    opacity: .5;
+}
+
+/* Nosotros */
+
 .about {
     position: relative;
 }
 
-.about .container {
-    /* position: absolute; */
+.about img.dots {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    padding: 0;
+    width: 43%;
+}
+
+img.dots-superior {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -109,17 +212,18 @@ a {
 
 .price .price-table>p {
     color: var(--naranja);
+    cursor: pointer;
 }
 
 /* Services */
-
 .services p.services {
     color: var(--naranja);
     font-size: 1.2rem;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
-.services .col-md-6 {
+.services .col-lg-6 {
     border: 1px solid #00bdff;
     margin: 1rem;
     display: grid;
@@ -131,10 +235,51 @@ a {
     -o-border-radius: 36px;
 }
 
-.services .col-md-6 h3 {
+.services .col-lg-6 h3 {
     color: var(--naranja);
     font-size: 1.2rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.services img.dots {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+}
+
+.services .right .item {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+
+.services .right .item img {
+    display: block;
+    margin: 8px auto;
+}
+
+/* Solicitar */
+.steeps .steep {
+    border: 2px solid #00bdff;
+    border-radius: 25px;
+    text-transform: uppercase;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-align: center;
+}
+
+.steeps .steep p:nth-child(1) {
+    color: var(--naranja);
+    font-weight: 700;
+}
+
+.steeps .steep img {
+    position: absolute;
+    bottom: -10px;
+    display: block;
 }
 
 
@@ -171,9 +316,13 @@ a {
 
 .contact .data {
     background: #3b3c3e;
-    width: 75%;
     padding: 2rem;
     border-radius: 25px;
+}
+
+.contact .data img {
+    display: inline-block;
+    margin: 0 10px 0 0;
 }
 
 .contact .data p {
@@ -209,10 +358,53 @@ footer .redes a {
     padding: 0;
 }
 
-@media (min-width: 768px) {
-    .col-md-6 {
+@media (min-width: 992px) {
+    .contact .data {
+        width: 75%;
+    }
+
+    .services .col-lg-6 {
         -ms-flex: 0 0 46%;
         flex: 0 0 46%;
         max-width: 46%;
     }
 }
+
+@media (max-width: 767px) {
+    .home {
+        background-position: center;
+    }
+
+    .home .flecha {
+        left: 16px;
+    }
+
+    .home h2,
+    h2.title {
+        font-size: 1.7rem;
+    }
+
+    .home h3 {
+        font-size: 1.2rem;
+    }
+
+    .price .container {
+        padding: 1rem;
+    }
+
+    .services .col-lg-6 {
+        grid-template-columns: 12fr;
+    }
+
+    .redes-fixed a {
+        background: #000;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .services .col-lg-6 {
+        -ms-flex: 0 0 46%;
+        flex: 0 0 46%;
+        max-width: 46%;
+    }
+} */

@@ -21,102 +21,138 @@
 </head>
 
 <body>
-
-
-
+    <div class="ir-arriba">
+        <img src="images/Up.png" alt="">
+    </div>
 
     <!-- Home -->
     <section class="home">
+        <!-- <img src="images/Home/Bg.png" alt=""> -->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#"><img src="images/Home/Logo.png" alt=""></a>
+            <nav class="navbar navbar-expand-lg navbar-light px-md-5">
+                <a class="navbar-brand ml-md-5" href="#"><img src="images/Home/Logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">NOSOTROS</a>
+                            <a class="nav-link" href="#about">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVICIOS</a>
+                            <a class="nav-link" href="#services">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PEDIDOS</a>
+                            <a class="nav-link" href="#pedidos">PEDIDOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">CONTACTO</a>
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="container">
+        <div class="container px-md-0 position-relative">
             <h2>CONTROLA TU GAS</h2>
             <h3>CON EL MEJOR SERVICIO</h3>
             <img src="images/Home/Rectangulo.png" class="img-fluid" alt="">
             <img src="images/Home/Flecha.png" class="img-fluid flecha" alt="">
         </div>
+        <div class="redes-fixed">
+            <a href="https://api.whatsapp.com/send?phone=525570995042" target="_blank" rel="noopener"><img src="images/Whats.png" class="img-fluid" alt=""></a>
+            <a href="https://m.me/maxiservise" target="_blank" rel="noopener"><img src="images/Messenger_2.png" class="img-fluid" alt=""></a>
+            <a href="mailto:ventas@maxiservise.com"><img src="images/FAQs_2.png" class="img-fluid" alt=""></a>
+        </div>
     </section>
 
     <!-- Price -->
-    <section class="price py-5 px-lg-5">
+    <section class="price px-3 py-5 px-lg-5">
         <div class="container">
-            <p>El mejor precio de Gas L.P. el día de hoy es de <span>$10.45</span> por litro.</p>
+            <p class="mb-0">El mejor precio de Gas L.P. el día de hoy es de <span>$10.45</span> por litro.</p>
             <p>Válido a partir del 8 de junio de 2020 * Precio sujeto a cambio sin previo aviso.</p>
             <hr>
             <div class="price-table">
-                <p class="text-uppercase title">Consulta la tabla de precios </p>
-                <div class="table"></div>
+                <p class="text-uppercase title mb-5" data-toggle="collapse" data-target="#tableprice" aria-expanded="true" aria-controls="collapseOne">Consulta la tabla de precios <i class="fas fa-chevron-down mx-3"></i> </p>
+                <div class="accordion" id="accordionExample">
+                    <div class="">
+                        <div id="tableprice" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body px-0">
+                                <img src="images/Tabla-comparativa.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a href="#" class="btn-pedidos">REALIZAR PEDIDO</a>
             </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about d-flex align-items-center justify-content-center">
-        <!-- <img src="images/Nosotros/Bg.png" class="img-fluid" alt=""> -->
+    <section class="about d-flex align-items-center justify-content-center" id="about">
+        <img src="images/Nosotros/Dots-superior.png" class="img-fluid dots-superior" alt="">
         <div class="containe">
-            <div class="row pl-5 justify-content-end">
-                <div class="col-md-5 d-flex justify-content-center flex-column">
-                    <h2 class="title">NOSOTROS</h2>
+            <div class="row pl-lg-5 justify-content-end">
+                <div class="col-md-6 col-lg-5 d-flex justify-content-center flex-column">
+                    <h2 class="title my-4"><img src="images/Nosotros/Flecha-azul.png" class="img-fluid" alt="">NOSOTROS</h2>
                     <p>Somos una empresa de distribución de gas L.P. directa
                         de planta. Sin intermediarios o comisionistas.</p>
                     <p>Para evitar malas prácticas, mandamos unidades directo de la planta. Somos el puente entre la gasera y tu negocio u hogar.</p>
                     <p>Te garantizamos litros de a litro instalando en tu negocio un equipo de medición digital en litros y no en porcentaje.</p>
                 </div>
-                <div class="col-md-5 col-lg-6 px-0 d-flex justify-content-end align-items-center">
+                <div class="col-md-6 col-lg-6 px-0 d-flex justify-content-end align-items-center">
                     <img src="images/Nosotros/Medidor.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
+        <img src="images/Nosotros/Dots.png" class="col-md-6 dots img-fluid" alt="">
     </section>
 
     <!-- SERVICES -->
-    <section class="services py-5">
+    <section class="services py-5 position-relative" id="services">
+        <img src="images/Servicios/Dots-servicios.png" class="img-fluid dots" alt="">
         <div class="container">
-            <h2 class="title mt-4"><img src="images/Nosotros/Flecha-azul.png" class="img-fluid" alt="">SERVICIOS</h2>
+            <h2 class="title my-4"><img src="images/Nosotros/Flecha-azul.png" class="img-fluid" alt="">SERVICIOS</h2>
             <p class="mb-0">Además de la distribución de gas contamos con servicios para negocios u hogares, como:</p>
             <p class="services">Mantenimiento, reparaciones, instalaciones, movimiento o cambio de tanques.</p>
             <p>Al ser cliente estos servicios no tienen costo. Además de que el personal que lo realiza es 100% profesional que está en constante capacitación para lidiar con fugas, incendios y primeros auxilios .</p>
             <p>Lo que más nos importa eres tú y por eso nos enfocamos en brindarte el mejor servicio.</p>
             <div class="row">
-                <div class="col-md-6 p-0">
-                    <img src="images/Servicios/1.png" class="img-fluid" alt="">
+                <div class="col-lg-6 pt-4 px-0 p-md-0">
+                    <img src="images/Servicios/1.png" class="img-fluid d-none d-md-block" alt="">
                     <div class="right d-flex justify-content-center flex-column px-4">
-                        <h3>SEGURIDAD</h3>
-                        <p>Pipas con unidades recientes que cumplen las normas más estrictas en el manejo de gas LP.</p>
-                        <p>Revisiones periódicas en llantas, frenos, válvulas, tanques además de extintores y sistema mata chispas.</p>
+                        <div class="item mb-3">
+                            <img src="images/Servicios/Candado.png" height="19" alt="">
+                            <h3 class="mb-0 ml-2">SEGURIDAD</h3>
+                        </div>
+                        <div class="item">
+                            <img src="images/Servicios/Bullet.png" alt="">
+                            <p class="ml-2">Pipas con unidades recientes que cumplen las normas más estrictas en el manejo de gas LP.</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Servicios/Bullet.png" alt="">
+                            <p class="ml-2">Revisiones periódicas en llantas, frenos, válvulas, tanques además de extintores y sistema mata chispas.</p>
+                        </div>
                     </div>
+                    <img src="images/Servicios/Seguridad.png" class="img-fluid d-block d-md-none" alt="">
                 </div>
-                <div class="col-md-6 p-0">
-                    <img src="images/Servicios/2.png" class="img-fluid" alt="">
+                <div class="col-lg-6 pt-4 px-0 p-md-0">
+                    <img src="images/Servicios/2.png" class="img-fluid d-none d-md-block" alt="">
                     <div class="right d-flex justify-content-center flex-column px-4">
-                        <h3>CONFIANZA</h3>
-                        <p>Profeco realiza revisiones periódicas a medidores, garantizados litros completos.</p>
-                        <p>Las válvulas salen con sellos inviolables para evitar malas prácticas.</p>
+                        <div class="item mb-3">
+                            <img src="images/Servicios/Estrella.png" width="22" alt="">
+                            <h3 class="mb-0 ml-2">CONFIANZA</h3>
+                        </div>
+                        <div class="item">
+                            <img src="images/Servicios/Bullet.png" alt="">
+                            <p>Profeco realiza revisiones periódicas a medidores, garantizados litros completos.</p>
+                        </div>
+                        <div class="item">
+                            <img src="images/Servicios/Bullet.png" alt="">
+                            <p>Las válvulas salen con sellos inviolables para evitar malas prácticas.</p>
+                        </div>
                     </div>
+                    <img src="images/Servicios/Confianza.png" class="img-fluid d-block d-md-none" alt="">
                 </div>
             </div>
         </div>
@@ -124,26 +160,36 @@
     </section>
 
     <!-- SOLICITAR -->
-    <section class="solicitud">
+    <section class="solicitud" id="pedidos">
         <div class="container">
-            <p>SOLICITA EL SERVICIO EN</p>
-            <p>3 SENCILLOS PASOS</p>
+            <p class="mb-0">SOLICITA EL SERVICIO EN</p>
+            <h2 class="title mb-4 pt-0"><img src="images/Nosotros/Flecha-azul.png" class="img-fluid" alt="">3 SENCILLOS PASOS</h2>
             <div class="steeps">
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>Manda un whatsapp</p>
-                        <p>solicitando los litros que necesitas o el monto a pagar.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 px-lg-5 d-flex flex-column justify-content-center align-items-center">
+                        <div class="steep py-5 px-4 my-5 d-flex flex-column justify-content-center align-items-center">
+                            <p>Manda un whatsapp</p>
+                            <p>solicitando los litros que necesitas o el monto a pagar.</p>
+                            <img src="images/Servicios/Rombo-Whats.png" alt="">
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <p>Arribo de la pipa</p>
-                        <p>de 2 a 24 horas llega la pipa de planta a cargar a tu negocio.</p>
+                    <div class="col-md-6 col-lg-4 px-lg-5 d-flex flex-column justify-content-center align-items-center">
+                        <div class="steep py-5 px-4 my-5 d-flex flex-column justify-content-center align-items-center">
+                            <p>Arribo de la pipa</p>
+                            <p>de 2 a 24 horas llega la pipa de planta a cargar a tu negocio.</p>
+                            <img src="images/Servicios/Rombo-pipa.png" alt="">
+                        </div>
+
                     </div>
-                    <div class="col-md-4">
-                        <p>paga fácil.</p>
-                        <p>Paga en un oxxo o con cargo a tu tarjeta de dédito o crédito.</p>
+                    <div class="col-md-6 col-lg-4 px-lg-5 d-flex flex-column justify-content-center align-items-center">
+                        <div class="steep py-5 px-4 my-5 d-flex flex-column justify-content-center align-items-center">
+                            <p>paga fácil.</p>
+                            <p>Paga en un oxxo o con cargo a tu tarjeta de dédito o crédito.</p>
+                            <img src="images/Servicios/Rombo-tarjeta.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <p>Además, te damos la opción de cargar primero tu consumo promedio y pagar la siguiente semana solo la cantidad que el medidor digital marca. Consulta aquí los términos y condiciones.</p>
+                <p class="mt-5">Además, te damos la opción de cargar primero tu consumo promedio y pagar la siguiente semana solo la cantidad que el medidor digital marca. Consulta aquí los términos y condiciones.</p>
                 <a href="#" class="btn-pedidos">REALIZAR PEDIDO</a>
             </div>
         </div>
@@ -151,10 +197,10 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="contact py-5 px-xl-5">
+    <section class="contact py-5 px-xl-5 mt-5" id="contacto">
         <div class="container">
             <h2 class="title">CONTACTO</h2>
-            <div class="row px-5">
+            <div class="row px-lg-5">
                 <div class="col-md-6">
                     <p class="">¿TIENES ALGUNA DUDA?</p>
                     <p class=""> ESCRIBÉNOS Y DEJANOS CONOCER MÁS SOBRE TUS NECESIDADES</p>
@@ -178,13 +224,13 @@
                         <button type="submit" class="btn btn-primary">ENVIAR</button>
                     </form>
                 </div>
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <div class="col-md-6 d-flex align-items-center justify-content-center mt-5 mt-md-5">
                     <div class="data">
                         <img src="images/Home/Logo.png" class="img-fluid mx-auto d-block" alt="">
-                        <a href="#"><img src="images/Contact/Tel.png" alt=""> 55 7099 5042</a>
+                        <a href="tel:5570995042"><img src="images/Contact/Tel.png" alt=""> 55 7099 5042</a>
                         <a href="mailto:ventas@maxiservise.com"><img src="images/Contact/Mail.png" alt=""> ventas@maxiservise.com</a>
                         <p>SíGUENOS</p>
-                        <a href="#"><img src="images/Contact/Face.png" alt=""> @maxiservise</a>
+                        <a href="https://www.facebook.com/maxiservise/"><img src="images/Contact/Face.png" alt=""> @maxiservise</a>
                     </div>
                 </div>
             </div>
@@ -194,15 +240,15 @@
     <footer class="py-5">
         <img src="images/Home/Logo.png" class="img-fluid mx-auto d-block" alt="">
         <div class="row justify-content-center px-lg-5 mt-4">
-            <div class="">
+            <div class="order-2 order-md-0 px-3 text-center">
                 <p>© 2020 MAXISERVISE Derechos Reservados Copyright ® </p>
             </div>
-            <div class="">
+            <div class="order-1 my-4 my-md-0 order-md-1">
                 <a href="#">Aviso de Privacidad</a>
             </div>
-            <div class="redes">
-                <a href=""><img src="images/Footer/Face.png" alt=""> </a>
-                <a href=""><img src="images/Footer/Tel.png" alt=""> </a>
+            <div class="redes order-0 order-md-2">
+                <a href="https://www.facebook.com/maxiservise/"><img src="images/Footer/Face.png" alt=""> </a>
+                <a href="tel:5570995042"><img src="images/Footer/Tel.png" alt=""></a>
                 <a href="mailto:mailto:ventas@maxiservise.com"><img src="images/Footer/Mail.png" alt=""> </a>
             </div>
         </div>
@@ -211,23 +257,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
-
-
-<!-- Pop Ads -->
-
-<script type='text/javascript'>
-    var adfly_id = 20879889;
-    var popunder_frequency_delay = 0;
-    var adfly_google_compliant = false;
-</script>
-<script src='https://cdn.adf.ly/js/display.js' />
-
-<!-- Termina PopAds -->
-
-<script async='async' data-ad-client='ca-pub-2980371348781959' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js' />
