@@ -32,7 +32,10 @@
             <nav class="navbar navbar-expand-lg navbar-light px-md-5">
                 <a class="navbar-brand ml-md-5" href="#"><img src="images/Home/Logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span></span>
+                    <span class="my-1"></span>
+                    <span></span>
                 </button>
 
                 <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
@@ -62,7 +65,7 @@
         <div class="redes-fixed">
             <a href="https://api.whatsapp.com/send?phone=525570995042" target="_blank" rel="noopener"><img src="images/Whats.png" class="img-fluid" alt=""></a>
             <a href="https://m.me/maxiservise" target="_blank" rel="noopener"><img src="images/Messenger_2.png" class="img-fluid" alt=""></a>
-            <a href="mailto:ventas@maxiservise.com"><img src="images/FAQs_2.png" class="img-fluid" alt=""></a>
+            <a href="" data-toggle="modal" data-target="#modalFaqs"><img src="images/FAQs_2.png" class="img-fluid" alt=""></a>
         </div>
     </section>
 
@@ -77,13 +80,120 @@
                 <div class="accordion" id="accordionExample">
                     <div class="">
                         <div id="tableprice" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body px-0">
-                                <img src="images/Tabla-comparativa.png" class="img-fluid" alt="">
+                            <div class="card-body px-0 bg-white">
+                                <!-- <img src="images/Tabla-comparativa.png" class="img-fluid" alt=""> -->
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr valign="middle">
+                                            <th scope="col">RAZÓN SOCIAL / NOMBRE</th>
+                                            <th scope="col">SEM 13-17 <br> Julio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SERVIGAS DEL VALLE, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>UNI-GAS, S.A DE C.V.</td>
+                                            <td>$11.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GAS CHAPULTEPEC, S.A DE C.V.</td>
+                                            <td>$11.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GASOMATICO, S.A DE C.V.</td>
+                                            <td>$11.99</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GAS Y SERVICIO, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>G.G. GAS, S.A DE C.V.</td>
+                                            <td>$12.06</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GAS FLAMAZUL, S.A DE C.V.</td>
+                                            <td>$11.95</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FLAMAMEX, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GARZA GAS, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>GAS METROPOLITANO, S.A DE C.V.</td>
+                                            <td>$10.68</td>
+                                        </tr>
+                                        <tr>
+                                            <td>REGIO GAS, S.A DE C.V.</td>
+                                            <td>$10.50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>GAS AMERICA, S.A DE C.V.</td>
+                                            <td>$10.87</td>
+                                        </tr> -->
+                                        <tr>
+                                            <td>GAS EXPRESS NIETO DE MÉXICO, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ZU-GAS, S.A DE C.V.</td>
+                                            <td>$12.05</td>
+                                        </tr>
+                                        <tr class="precio-maxiservise">
+                                            <td>PRECIO MAXISERVISE</td>
+                                            <td>$11.86</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 class="title-oferta">Oferta comercial Julio 2020</h2>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>Litros</th>
+                                            <th>Descuento</th>
+                                            <th>Precio a pagar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>50-100</th>
+                                            <th>$0.50</th>
+                                            <th>$11.36</th>
+                                        </tr>
+                                        <tr>
+                                            <th>101-300</th>
+                                            <th>$1.00</th>
+                                            <th>$10.86</th>
+                                        </tr>
+                                        <tr>
+                                            <th>301-600</th>
+                                            <th>$1.50</th>
+                                            <th>$10.36</th>
+                                        </tr>
+                                        <tr>
+                                            <th>601-900</th>
+                                            <th>$2.00</th>
+                                            <th>$9.86</th>
+                                        </tr>
+                                        <tr>
+                                            <th>900+</th>
+                                            <th>$2.50</th>
+                                            <th>$9.66</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn-pedidos">REALIZAR PEDIDO</a>
+                <a href="https://api.whatsapp.com/send?phone=525570995042" class="btn-pedidos">REALIZAR PEDIDO</a>
             </div>
         </div>
     </section>
@@ -99,6 +209,165 @@
                         de planta. Sin intermediarios o comisionistas.</p>
                     <p>Para evitar malas prácticas, mandamos unidades directo de la planta. Somos el puente entre la gasera y tu negocio u hogar.</p>
                     <p>Te garantizamos litros de a litro instalando en tu negocio un equipo de medición digital en litros y no en porcentaje.</p>
+                    <!-- Preguntas -->
+                    <div class="accordion" id="accordionabout">
+                        <div class="card header p-0">
+                            <div class="card-header bg-white px-0" id="headingOne">
+                                <p class="mb-0" data-toggle="collapse" data-target="#preguntas" aria-expanded="true" aria-controls="collapseOne">
+                                    Preguntas frecuentes <i class="fas fa-chevron-down mx-3"></i>
+                                </p>
+                            </div>
+                            <div id="preguntas" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body px-0">
+                                    <!-- Segundo -->
+                                    <div class="accordion" id="accordionExample">
+                                        <!--  -->
+                                        <div class="card">
+                                            <div class="card-header" id="headingOne">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿QUE ES MAXISERVISE?
+                                                    </button>
+                                                </h2>
+                                            </div>
+
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Es una empresa dedicada a la venta de gas lp directamente de planta atendiendo principalmente a pequeñas y medianas empresas.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingTwo">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿MAXISERVISE CUENTA CON PIPAS PROPIAS?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    No son pipas directas de la planta
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingThree">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿CUÁL ES LA DIFERENCIA ENTRE UNA PIPA DE PLANTA Y UN COMISIONISTA?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Las pipas de planta cumplen con todas las medidas de seguridad que exige la Comisión reguladora de energía como son unidades nuevas con servicios periódicos en llantas, frenos, válvulas, manguera etc, además su personal esta altamente capacitado para reaccionar ante cualquier emergencia.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingFour">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿CÓMO PUEDO ESTAR SEGURO QUE LA PIPA NO ME VA A ROBAR?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Las pipas de planta son revisadas periódicamente por profeco además cuentan con sellos en válvulas que impiden malas prácticas de los operadores, y si eso no es suficiente Maxiservise instala en tu negocio un medidor digital para garantizar litros completos.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingFive">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿QUE ES UN MEDIDOR DIGITAL Y CÓMO FUNCIONA?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Consta de un sensor que va instalado en tu tanque este mide el contenido de gas y a su vez manda la información a un dispositivo digital que va instalado en tu negocio a la vista, en este aparece el total de litros que tiene el tanque en tiempo real.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSix">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿HAY QUE HACER ALGUNA MODIFICACIÓN O VACIAR EL TANQUE?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    No es necesario y la instalación no tarda más de 30 minutos.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSeven">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿TIENE ALGÚN COSTO EL MEDIDOR DIGITAL?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    No tiene costo lo adquieres en comodato, eso quiere decir que mientras cargues tu gas con Maxiservise podrás usar el medidor digital.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSeven">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿Tiene algún costo la instalación del medidor digital?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseEight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    No tiene ningún costo.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSeven">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿COMO REALIZO MI PEDIDO DE GAS?
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Es muy fácil, solo tienes que verificar en tu medidor digital cuanto gas tienes para asi saber cuanto vas a solicitar después puedes llamar o enviar un mensaje de whatsapp a Maxiservise y listo.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="headingSeven">
+                                                <h2 class="mb-0">
+                                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿COMO REALIZO EL PAGO DE MI SERVICIO Y EN CUANTO TIEMPO LLEGA LA PIPA??
+                                                    </button>
+                                                </h2>
+                                            </div>
+                                            <div id="collapseTen" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    Es muy fácil puede ser en efectivo, con tarjeta de credito o debito, depósito en oxxo, transferencia bancaria o deposito bancario y la pipa llegara de 2 a 24 horas dependiendo el horario.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-6 px-0 d-flex justify-content-end align-items-center">
                     <img src="images/Nosotros/Medidor.png" class="img-fluid" alt="">
@@ -190,7 +459,7 @@
                     </div>
                 </div>
                 <p class="mt-5">Además, te damos la opción de cargar primero tu consumo promedio y pagar la siguiente semana solo la cantidad que el medidor digital marca. Consulta aquí los términos y condiciones.</p>
-                <a href="#" class="btn-pedidos">REALIZAR PEDIDO</a>
+                <a href="https://api.whatsapp.com/send?phone=525570995042" class="btn-pedidos">REALIZAR PEDIDO</a>
             </div>
         </div>
 
@@ -244,7 +513,10 @@
                 <p>© 2020 MAXISERVISE Derechos Reservados Copyright ® </p>
             </div>
             <div class="order-1 my-4 my-md-0 order-md-1">
-                <a href="#">Aviso de Privacidad</a>
+                <a href="#" class="privacidad">Aviso de Privacidad</a>
+            </div>
+            <div class="order-1 mb-4 my-md-0 order-md-1">
+                <a href="" class="frecuentes" data-toggle="modal" data-target="#modalFaqs">Preguntas frecuentes</a>
             </div>
             <div class="redes order-0 order-md-2">
                 <a href="https://www.facebook.com/maxiservise/"><img src="images/Footer/Face.png" alt=""> </a>
@@ -254,6 +526,169 @@
         </div>
     </footer>
 
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalFaqs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">PREGUNTAS FRECUENTES</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿QUE ES MAXISERVISE?
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Es una empresa dedicada a la venta de gas lp directamente de planta atendiendo principalmente a pequeñas y medianas empresas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿MAXISERVISE CUENTA CON PIPAS PROPIAS?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    No son pipas directas de la planta
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿CUÁL ES LA DIFERENCIA ENTRE UNA PIPA DE PLANTA Y UN COMISIONISTA?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Las pipas de planta cumplen con todas las medidas de seguridad que exige la Comisión reguladora de energía como son unidades nuevas con servicios periódicos en llantas, frenos, válvulas, manguera etc, además su personal esta altamente capacitado para reaccionar ante cualquier emergencia.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿CÓMO PUEDO ESTAR SEGURO QUE LA PIPA NO ME VA A ROBAR?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Las pipas de planta son revisadas periódicamente por profeco además cuentan con sellos en válvulas que impiden malas prácticas de los operadores, y si eso no es suficiente Maxiservise instala en tu negocio un medidor digital para garantizar litros completos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt=""> ¿QUE ES UN MEDIDOR DIGITAL Y CÓMO FUNCIONA?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Consta de un sensor que va instalado en tu tanque este mide el contenido de gas y a su vez manda la información a un dispositivo digital que va instalado en tu negocio a la vista, en este aparece el total de litros que tiene el tanque en tiempo real.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿HAY QUE HACER ALGUNA MODIFICACIÓN O VACIAR EL TANQUE?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    No es necesario y la instalación no tarda más de 30 minutos.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿TIENE ALGÚN COSTO EL MEDIDOR DIGITAL?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    No tiene costo lo adquieres en comodato, eso quiere decir que mientras cargues tu gas con Maxiservise podrás usar el medidor digital.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿Tiene algún costo la instalación del medidor digital?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    No tiene ningún costo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿COMO REALIZO MI PEDIDO DE GAS?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Es muy fácil, solo tienes que verificar en tu medidor digital cuanto gas tienes para asi saber cuanto vas a solicitar después puedes llamar o enviar un mensaje de whatsapp a Maxiservise y listo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseThree">
+                                        <img src="images/Servicios/Bullet.png" class="mr-2" alt="">¿COMO REALIZO EL PAGO DE MI SERVICIO Y EN CUANTO TIEMPO LLEGA LA PIPA??
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Es muy fácil puede ser en efectivo, con tarjeta de credito o debito, depósito en oxxo, transferencia bancaria o deposito bancario y la pipa llegara de 2 a 24 horas dependiendo el horario.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

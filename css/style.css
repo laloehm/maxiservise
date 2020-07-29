@@ -30,7 +30,7 @@ h2.title img {
 
 p,
 a {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a:hover {
@@ -172,6 +172,18 @@ a:hover {
     opacity: .5;
 }
 
+.precio-maxiservise {
+    background: #00bdff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+h2.title-oferta {
+    background: var(--naranja);
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
 /* Nosotros */
 
 .about {
@@ -190,6 +202,27 @@ img.dots-superior {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* .about p.frecuntes {
+    color: #00bdff;
+    font-weight: 700;
+    letter-spacing: 1px;
+} */
+
+#accordionabout .header {
+    border: none !important;
+}
+
+/* #accordionabout .header .card-header {
+    background: #fff;
+} */
+
+#accordionabout .header .card-header p {
+    color: #00bdff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
@@ -343,7 +376,7 @@ footer {
     color: #ffffff;
 }
 
-footer a {
+footer a.privacidad {
     color: var(--naranja);
     display: inline-block;
     margin: 0 1.5rem;
@@ -352,11 +385,28 @@ footer a {
     padding: 0 1.5rem;
 }
 
+footer a.frecuentes {
+    color: var(--naranja);
+    display: inline-block;
+    border-right: 1px solid #00bdff;
+    padding: 0 1.5rem 0 0;
+    margin-right: 1rem;
+}
+
 footer .redes a {
     margin: 0 .7rem;
     border: none;
     padding: 0;
 }
+
+/* Modal */
+
+.btn-link {
+    color: var(--naranja);
+    font-weight: 600;
+    text-align: left;
+}
+
 
 @media (min-width: 992px) {
     .contact .data {
@@ -367,6 +417,26 @@ footer .redes a {
         -ms-flex: 0 0 46%;
         flex: 0 0 46%;
         max-width: 46%;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler span {
+        background: #00bdff;
+        width: 30px;
+        height: 3px;
+        display: block;
+    }
+
+    .navbar-collapse {
+        background: #000;
     }
 }
 
@@ -398,6 +468,17 @@ footer .redes a {
 
     .redes-fixed a {
         background: #000;
+    }
+
+    footer a.frecuentes {
+        margin: 0 1.5rem;
+        border-left: 1px solid #00bdff;
+        border-right: 1px solid #00bdff;
+        padding: 0 1.5rem;
+    }
+
+    .table {
+        font-size: 13px;
     }
 }
 
